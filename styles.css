@@ -1,0 +1,212 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f0f0;
+  }
+  
+  /* Header and navigation */
+  header {
+    background-color: #2c3e50;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 1rem;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #3498db;
+  }
+  
+  nav ul li a.active {
+    color: #3c78e7;
+  }
+  
+  /* Main content */
+  main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+  }
+  
+  section {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 0.5rem;
+  }
+  
+  /* About section */
+  .subtitle {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-info {
+    margin-bottom: 1rem;
+  }
+  
+  .contact-info a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .about-content {
+    background-color: #ecf0f1;
+    padding: 1.5rem;
+    border-radius: 5px;
+  }
+  
+  /* Education section */
+  .education-item {
+    margin-bottom: 1rem;
+  }
+  
+  /* Projects section */
+  .project {
+    background-color: #ecf0f1;
+    padding: 1.5rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .tech-used {
+    font-style: italic;
+    color: #7f8c8d;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Experience section */
+  .experience-item {
+    background-color: #ecf0f1;
+    padding: 1.5rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .duration {
+    font-weight: bold;
+    color: #126d9a;
+  }
+  
+  .description {
+    font-style: italic;
+    color: #7f8c8d;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Tech Stack section */
+  .tech-category {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tech-category ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style-type: none;
+  }
+  
+  .tech-category li {
+    background-color: #3498db;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  
+  /* Achievements section */
+  #achievements ul {
+    list-style-type: none;
+  }
+  
+  #achievements li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+  
+  #achievements li::before {
+    content: "🏆";
+    position: absolute;
+    left: 0;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin: 0.5rem 0;
+    }
+  
+    main {
+      padding: 0 1rem;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  section {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  
